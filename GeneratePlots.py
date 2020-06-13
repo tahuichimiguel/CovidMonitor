@@ -79,11 +79,11 @@ plt.vlines(x = xmax-george_floyd_start_location,
            ymax = ymax+1,
            colors='black')
 
-# phase_green_location = days_between(pa_phase_green_date+str(20),diff_df.index[-1]+str(20)) + 1
-# plt.vlines(x = xmax-phase_green_location,
-#            ymin = 0,
-#            ymax = ymax+1,
-#            colors='green')
+phase_green_location = days_between(pa_phase_green_date+str(20),diff_df.index[-1]+str(20)) + 1
+plt.vlines(x = xmax-phase_green_location,
+           ymin = 0,
+           ymax = ymax+1,
+           colors='green')
 
 plt.plot(rolling_avg_7_day_df['new-covid-cases'],'purple',label = "7-day-average")
 plt.plot(rolling_avg_5_day_df['new-covid-cases'],'red',label = "5-day-average")
